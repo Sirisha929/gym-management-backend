@@ -37,4 +37,7 @@ if (planCount === 0) {
 }
 
 console.log('DB ready.');
-process.exit(0);
+
+if (require.main === module) {
+  process.exit(0);
+}
